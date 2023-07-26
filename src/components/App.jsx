@@ -20,7 +20,7 @@ export default function App() {
   };
 
   const countTotalFeedback = () => {
-    return Object.values(state).reduce((value, acc) => acc += value, 0);
+    return Object.values(state).reduce((acc, value) => acc += value, 0);
   };
 
   const countPositiveFeedbackPercentage = () => {
